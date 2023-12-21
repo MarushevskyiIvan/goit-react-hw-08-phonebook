@@ -12,10 +12,10 @@ export const ContactsList = () => {
 
   return (
     <ItemWrapper>
-      {contacts.map(({ name, phone, id }) => {
+      {contacts.map(({ name, number, id }) => {
         return (
           <ListItem key={id}>
-            <ListText>{name}</ListText> :<ListNumber>{phone}</ListNumber>
+            <ListText>{name}</ListText> :<ListNumber>{number}</ListNumber>
             <ListBtn onClick={() => dispatch(deleteContact(id))} type="button">
               delete
             </ListBtn>

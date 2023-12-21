@@ -1,9 +1,7 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import 'yup-phone-lite';
-
 import { useDispatch, useSelector } from 'react-redux';
-import {} from 'redux/contacts/contactsSlice';
 import { addContact } from 'redux/contacts/operations';
 import { contactsSelector } from 'redux/contacts/selectors';
 
